@@ -1,0 +1,143 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>介绍</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h2>一年级学霸养成营</h2>
+  <p style="color:lightgray">第17期  11月1日-12月1日 含语数英三门课</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        <h3 style="color:red">限时免费</h3>
+      </ion-col>
+      <ion-col col-2>
+        <span style="color:lightgray;text-decoration:line-throuth">原价￥297</span>
+      </ion-col>
+      <ion-col>
+        <button *ngIf="days>=1" style="color:white;background-color:red">{{days}}</button>
+        <span style="color:red">天</span>
+        <button *ngIf="hours>=1" style="color:white;background-color:red">{{hours}}</button>
+        <span>:</span>
+        <button *ngIf="minutes>=1" style="color:white;background-color:red">{{minutes}}</button>
+        <span>:</span>
+        <button *ngIf="second>=1" style="color:white;background-color:red">{{second}}</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <p style="color:lightgray">394985人购买</p>
+  <ion-grid>
+    <ion-row style="width:100%;height:80px;background-color:lightblue; text-align:center">
+      <ion-col col-3>
+        <ion-thumbnail>
+          <img style="width:60px;height:60px;border-radius:40px" src="../assets/img/15206690189898.png" alt="">
+        </ion-thumbnail>
+      </ion-col>
+      <ion-col>
+          <p>添加助教老师微信</p>
+          <p>免费领取课程</p>
+      </ion-col>
+      <ion-col col-3 style="margin-top:12px;">
+          <button ion-button color="primary" style="width:40px;height:30px">添加</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <h2>套餐内容</h2>
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img style="width:60px;height:60px;border-radius:40px" src="../assets/img/15206690189898.png" alt="">
+      </ion-thumbnail>
+      <h4>简单五步学会看图写话</h4>
+      <p>11月13日-11月19日.7次课</p>
+      <button ion-button item-end clear (click)="jump()">&gt;</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img style="width:60px;height:60px;border-radius:40px" src="../assets/img/15206690189898.png" alt="">
+      </ion-thumbnail>
+      <h4>简单五步学会看图写话</h4>
+      <p>11月13日-11月19日.7次课</p>
+      <button ion-button item-end clear (click)="jump()">&gt;</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img style="width:60px;height:60px;border-radius:40px" src="../assets/img/15206690189898.png" alt="">
+      </ion-thumbnail>
+      <h4>简单五步学会看图写话</h4>
+      <p>11月13日-11月19日.7次课</p>
+      <button ion-button item-end clear (click)="jump()">&gt;</button>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+        <ion-thumbnail item-start>
+            <img style="width:60px;height:60px;border-radius:40px" src="../assets/img/star.png" alt="">
+          </ion-thumbnail>
+          <h3>一年级语文秋季同步课</h3>
+          <p>3月1日-1月20日</p>
+          <h4>￥199</h4>
+          <button item-end ion-button round color="danger"><p style="color:white;font-size:8px;">添加</p></button>
+    </ion-item>
+    <ion-item>
+        <ion-thumbnail item-start>
+            <img style="width:60px;height:60px;border-radius:40px" src="../assets/img/star.png" alt="">
+          </ion-thumbnail>
+          <h3>一年级语文秋季同步课</h3>
+          <p>3月1日-1月20日</p>
+          <h4>￥199</h4>
+          <button item-end ion-button round color="danger"><p style="color:white;font-size:8px;">添加</p></button>
+    </ion-item>
+    <ion-item>
+        <ion-thumbnail item-start>
+            <img style="width:60px;height:60px;border-radius:40px" src="../assets/img/star.png" alt="">
+          </ion-thumbnail>
+          <h3>一年级英语秋季同步课</h3>
+          <p>3月1日-1月20日</p>
+          <h4>￥199</h4>
+          <button item-end ion-button round color="danger"><p style="color:white;font-size:8px;">添加</p></button>
+    </ion-item>
+    <ion-item>
+        <ion-thumbnail item-start>
+            <img style="width:60px;height:60px;border-radius:40px" src="../assets/img/star.png" alt="">
+          </ion-thumbnail>
+          <h3>一年级数学秋季同步课</h3>
+          <p>3月1日-1月20日</p>
+          <h4>￥199</h4>
+          <button item-end ion-button round color="danger"><p style="color:white;font-size:8px;">添加</p></button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button [navPush]="notFound" ion-button clear color='dark'>
+          <ion-icon name="heart"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button [navPush]="cart" ion-button clear color='dark'>
+          <ion-icon name="cart"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button  [navPush]="notFound" ion-button clear>
+          <img src="../assets/img/~HL9Q20KDPWO4}(V~2$Y@X6.jpg" style="width:70px;height:40px">
+        </button>
+      </ion-col>
+      <ion-col col-6>
+        <button (click)="addToCart()" ion-button color='danger' block>
+          添加到课程表
+        </button>
+      </ion-col>            
+    </ion-row>
+  </ion-grid>
+</ion-footer>

@@ -1,0 +1,101 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!--下拉刷新-->
+  <ion-refresher (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-down" pullingText="下拉刷新">
+      
+    </ion-refresher-content>
+  </ion-refresher>
+  <!--轮播图-->
+  <ion-slides style="height:200px" autoplay=2000 loop=true pager=true>
+    <ion-slide>
+      <img src="../assets/img/713103b58cdc40099209b0daa146d4ec_th.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="../assets/img/74258PICFZV_1024.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="../assets/img/CgAGTFgZVjiAEttIAAOORj6B1BE449.jpg" alt="">
+    </ion-slide>
+  </ion-slides>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img style="width:100%" src="../assets/img/-155100ca849504c9.png" alt="">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3><img style="width:60px;height:60px;border-radius:40px" src="../assets/img/44c68567196c400.jpg" alt=""></ion-col>
+      <ion-col col-3><img style="width:60px;height:60px;border-radius:40px" src="../assets/img/23d07846731e6b62.png" alt=""></ion-col>
+      <ion-col col-3><img style="width:60px;height:60px;border-radius:40px" src="../assets/img/44c68567196c400.jpg" alt=""></ion-col>
+      <ion-col col-3><img style="width:60px;height:60px;border-radius:40px" src="../assets/img/23d07846731e6b62.png" alt=""></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 缩略图 -->
+  <ion-list>
+    <ion-item (click)="jump()" >
+      <ion-thumbnail item-start>
+        <img src="../assets/img/15206690189898.png" alt="">
+      </ion-thumbnail>
+      <h3>一年级数学秋季同步课</h3>
+      <p>9月1日-1月20日</p>
+      <button ion-button item-end clear>
+        <h4>￥399</h4>
+      </button>
+      <button item-end ion-button color="danger" style="width:60px;height:20px;border-radius:40px"><p style="color:white;font-size:8px;text-align:right">会员免费</p></button>
+    </ion-item>
+    <ion-item (click)="jump()">
+      <ion-thumbnail item-start>
+        <img src="../assets/img/15206690189898.png" alt="">
+      </ion-thumbnail>
+      <h3>一年级英语秋季同步课</h3>
+      <p>3月1日-1月20日</p>
+      <button ion-button item-end clear>
+        <h4>￥99</h4>
+      </button>
+      <button item-end ion-button color="danger" style="width:60px;height:20px;border-radius:40px"><p style="color:white;font-size:8px;">会员免费</p></button>
+    </ion-item>
+    <ion-item (click)="jump()">
+      <ion-thumbnail item-start>
+        <img src="../assets/img/15206690189898.png" alt="">
+      </ion-thumbnail>
+      <h3>一年级语文秋季同步课</h3>
+      <p>3月1日-1月20日</p>
+      <button ion-button item-end clear>
+        <h4>￥299</h4>
+      </button>
+      <button item-end ion-button color="danger" style="width:60px;height:20px;border-radius:40px"><p style="color:white;font-size:8px;">会员免费</p></button>
+    </ion-item>
+    <ion-item (click)="jump()">
+      <ion-thumbnail item-start>
+        <img src="../assets/img/15206690189898.png" alt="">
+      </ion-thumbnail>
+      <h3>一年级数学秋季同步课</h3>
+      <p>3月1日-1月20日</p>
+      <button ion-button item-end clear>
+        <h4>￥499</h4>
+      </button>
+      <button item-end ion-button color="danger" style="width:60px;height:20px;border-radius:40px"><p style="color:white;font-size:8px;">会员免费</p></button>
+    </ion-item>
+    <ion-item (click)="jump()">
+      <ion-thumbnail item-start>
+        <img src="../assets/img/15206690189898.png" alt="">
+      </ion-thumbnail>
+      <h3>一年级语文秋季同步课</h3>
+      <p>3月1日-1月20日</p>
+      <button ion-button item-end clear>
+        <h4>￥199</h4>
+      </button>
+      <button item-end ion-button color="danger" style="width:60px;height:20px;border-radius:40px"><p style="color:white;font-size:8px;">会员免费</p></button>
+    </ion-item>
+  </ion-list>
+</ion-content>
